@@ -1,0 +1,26 @@
+﻿<Page x:Class="prakt7_Leshukov.Pages.Add"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:prakt7_Leshukov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Add">
+
+    <Grid>
+        <StackPanel Name="panel">
+            <TextBlock>Название</TextBlock>
+            <TextBox Text="{Binding Title}"></TextBox>
+            <TextBlock>Локация</TextBlock>
+            <TextBox Text="{Binding Location}"></TextBox>
+            <TextBlock>Дата</TextBlock>
+            <DatePicker Text="{Binding EventDate}"></DatePicker>
+            <TextBlock>Активен</TextBlock>
+            <CheckBox IsChecked="{Binding isActive}"></CheckBox>
+            <TextBlock>Цена</TextBlock>
+            <TextBox Text="{Binding TicketPrice}"></TextBox>
+            <Button Click="AddEvent">Создать</Button>
+        </StackPanel>
+    </Grid>
+</Page>

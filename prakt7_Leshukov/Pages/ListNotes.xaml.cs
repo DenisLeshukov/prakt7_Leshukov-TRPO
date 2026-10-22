@@ -26,26 +26,43 @@ namespace prakt7_Leshukov.Pages
     {
         public ObservableCollection<Event> events { get; set; } = new ObservableCollection<Event>( );
         private ServiceEvents service = new ServiceEvents( );
-
+        public string location=null;
+        public int id;
+        
+        public bool? isActive = null;
         public ListNotes ()
         {
             InitializeComponent( );
-          
-            DataContext = this;
+
+            grid.DataContext = this;
         }
-       
+
         private async void GetAll (object sender, RoutedEventArgs e)
         {
-
-            await service.GetAllFunc( );
-            events = service.events;
+            var data = await service.GetAllFunc(location, isActive);
+            events.Clear( );
+            foreach (var item in data)
+                events.Add(item);
         }
 
         private async void GetAllFilter (object sender, RoutedEventArgs e)
         {
 
+            var data = await service.GetAllFunc(location, isActive);
+            events.Clear( );
+            foreach (var item in data)
+                events.Add(item);
             
+        }
 
+        private void Go_to_add (object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Add() );
+        }
+        private void Delete (object sender, RoutedEventArgs e)
+        {
+            del_add.DataContext = id;
+            service.Delete(id);
         }
     }
 }

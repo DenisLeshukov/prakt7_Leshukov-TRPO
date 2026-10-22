@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\st310-05\Desktop\Новая папка\prakt7_Leshukov\obj\Debug\net8.0-windows\
+C:\Users\st310-05\Desktop\prakt7_Leshukov\prakt7_Leshukov\obj\Debug\net8.0-windows\
 prakt7_Leshukov
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\st310-05\Desktop\Новая папка\prakt7_Leshukov\App.xaml
-2-1678613890
+C:\Users\st310-05\Desktop\prakt7_Leshukov\prakt7_Leshukov\App.xaml
+3-1608170893
 221218701844
-7-1255565121
+81294684879
 2011382505182
-MainWindow.xaml;Pages\ListNotes.xaml;
+MainWindow.xaml;Pages\Add.xaml;Pages\ListNotes.xaml;
 
 False
 

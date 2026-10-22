@@ -323,11 +323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\st310-05\\Desktop\\Новая папка\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
+      "projectUniqueName": "C:\\Users\\st310-05\\Desktop\\prakt7_Leshukov\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
       "projectName": "prakt7_Leshukov",
-      "projectPath": "C:\\Users\\st310-05\\Desktop\\Новая папка\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
+      "projectPath": "C:\\Users\\st310-05\\Desktop\\prakt7_Leshukov\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
       "packagesPath": "C:\\Users\\st310-05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\st310-05\\Desktop\\Новая папка\\prakt7_Leshukov\\obj\\",
+      "outputPath": "C:\\Users\\st310-05\\Desktop\\prakt7_Leshukov\\prakt7_Leshukov\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
