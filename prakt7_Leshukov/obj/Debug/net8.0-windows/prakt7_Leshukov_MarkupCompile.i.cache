@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\st310-05\Desktop\prakt7_Leshukov\prakt7_Leshukov\obj\Debug\net8.0-windows\
+C:\Users\Leshu\Desktop\prakt7_Leshukov-TRPO\prakt7_Leshukov\obj\Debug\net8.0-windows\
 prakt7_Leshukov
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\st310-05\Desktop\prakt7_Leshukov\prakt7_Leshukov\App.xaml
-3-1608170893
-221218701844
-101242037440
-2011382505182
-MainWindow.xaml;Pages\Add.xaml;Pages\ListNotes.xaml;
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Leshu\Desktop\prakt7_Leshukov-TRPO\prakt7_Leshukov\App.xaml
+4-1441377359
+22-1229339961
+12142241330
+201-592054614
+MainWindow.xaml;Pages\Add.xaml;Pages\Change.xaml;Pages\ListEvents.xaml;
 
-True
+False
 

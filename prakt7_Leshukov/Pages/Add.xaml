@@ -6,21 +6,41 @@
       xmlns:local="clr-namespace:prakt7_Leshukov.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+       xmlns:Md="http://materialdesigninxaml.net/winfx/xaml/themes"
       Title="Add">
 
     <Grid>
-        <StackPanel Name="panel">
-            <TextBlock>Название</TextBlock>
-            <TextBox Text="{Binding Title}"></TextBox>
-            <TextBlock>Локация</TextBlock>
-            <TextBox Text="{Binding Location}"></TextBox>
-            <TextBlock>Дата</TextBlock>
-            <DatePicker Text="{Binding EventDate}"></DatePicker>
-            <TextBlock>Активен</TextBlock>
-            <CheckBox IsChecked="{Binding isActive}"></CheckBox>
-            <TextBlock>Цена</TextBlock>
-            <TextBox Text="{Binding TicketPrice}"></TextBox>
-            <Button Click="AddEvent">Создать</Button>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+       
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Название</TextBlock>
+                <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding Title}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Локация</TextBlock>
+            <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding Location}"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Дата</TextBlock>
+            <DatePicker VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding EventDate}"></DatePicker>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Активен</TextBlock>
+            <CheckBox VerticalAlignment="Center" Md:HintAssist.Hint="" IsChecked="{Binding IsActive}"></CheckBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Цена</TextBlock>
+            <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding TicketPrice}"></TextBox>
+            </StackPanel>
+
+            <Button Width="200" Grid.Row="5" Click="AddEvent">Создать</Button>
+        
     </Grid>
 </Page>

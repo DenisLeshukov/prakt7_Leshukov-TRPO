@@ -1,7 +1,9 @@
-﻿using prakt7_Leshukov.Services;
+﻿using prakt7_Leshukov.Models;
+using prakt7_Leshukov.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,13 +29,26 @@ namespace prakt7_Leshukov.Pages
         public Add()
         {
             InitializeComponent();
-            panel.DataContext = _ev;
+            DataContext = _ev;
         }
 
         private async void AddEvent (object sender, RoutedEventArgs e)
         {
-            await service.Create(_ev);
-            NavigationService.GoBack( );
+            try
+            {
+                await service.Create(_ev);
+                NavigationService.Navigate(new ListEvents());
+            }
+            catch (HttpRequestException)
+            {
+                MessageBox.Show("API сервер недоступен, либо ваш запрос неверен");
+            }
+            catch
+            {
+                MessageBox.Show("Неверные данные");
+            }
+            
+            
         }
     }
 }

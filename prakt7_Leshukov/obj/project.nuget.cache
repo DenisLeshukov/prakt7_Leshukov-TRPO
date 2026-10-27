@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6S868XQjQEiQR+6XKapFoeCr0ljZnfmhTxaw9eLzK9N77azovXUEr5mBQLG0mJhA70OqQSjFMS9sAKAdo2ZGIg==",
+  "dgSpecHash": "PX839PaEh2M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\st310-05\\Desktop\\prakt7_Leshukov\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
+  "projectFilePath": "C:\\Users\\Leshu\\Desktop\\prakt7_Leshukov-TRPO\\prakt7_Leshukov\\prakt7_Leshukov.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\st310-05\\.nuget\\packages\\materialdesigncolors\\5.3.0\\materialdesigncolors.5.3.0.nupkg.sha512",
-    "C:\\Users\\st310-05\\.nuget\\packages\\materialdesignthemes\\5.3.0\\materialdesignthemes.5.3.0.nupkg.sha512",
-    "C:\\Users\\st310-05\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+    "C:\\Users\\Leshu\\.nuget\\packages\\materialdesigncolors\\5.3.0\\materialdesigncolors.5.3.0.nupkg.sha512",
+    "C:\\Users\\Leshu\\.nuget\\packages\\materialdesignthemes\\5.3.0\\materialdesignthemes.5.3.0.nupkg.sha512",
+    "C:\\Users\\Leshu\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
   "logs": []
 }

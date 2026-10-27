@@ -21,7 +21,7 @@ namespace prakt7_Leshukov
         {
             
             InitializeComponent( );
-            frame.Navigate(new ListNotes( ));
+            frame.Navigate(new ListEvents( ));
         }
     }
 }

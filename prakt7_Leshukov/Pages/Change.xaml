@@ -1,0 +1,50 @@
+﻿<Page x:Class="prakt7_Leshukov.Pages.Change"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:prakt7_Leshukov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+       xmlns:Md="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="Change">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Название</TextBlock>
+            <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding Title}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Локация</TextBlock>
+            <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding Location}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Дата</TextBlock>
+            <DatePicker VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" SelectedDate="{Binding EventDate}"></DatePicker>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Активен</TextBlock>
+            <CheckBox VerticalAlignment="Center" Md:HintAssist.Hint="" IsChecked="{Binding IsActive}"></CheckBox>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center">Цена</TextBlock>
+            <TextBox VerticalAlignment="Center" Width=" 200" Md:HintAssist.Hint="" Text="{Binding TicketPrice}"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="5">
+            <Button Margin="0 0 10 0" Click="ChangeItem">Изменить частично</Button>
+            <Button Margin="0 0 10 0" Click="ChangeFullItem">Изменить полностью</Button>
+        </StackPanel>
+       
+
+    </Grid>
+   
+</Page>
